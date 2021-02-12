@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className='header'>
             <span className='header-title'>
-                <img src={HauskeyLogo} height='70px' width='100px'/>
+                <img src={HauskeyLogo} className='header-logo'/>
             </span>
         </div>
     )

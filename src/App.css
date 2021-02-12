@@ -21,20 +21,51 @@
   color : black;
   width: 100%;
   text-align: center;
-  height: 130px;
+  height: 30%;
   padding: 30px ;
   top: 0px;
   overflow: hidden;
   position: fixed;
+  margin-left: 50px;
 }
-
 .header-title{
   font-size: 50px;
 }
-
 .header-text{
   font-size: 20px;
 }
+.header-logo{
+  height:70px;
+  width:80px;
+  size : 20px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 540px) {
+  .header{
+    background-color: white;
+    color : black;
+    width: 120%;
+    text-align: center;
+    height: 30%;
+    padding: 30px ;
+    top: 0px;
+    overflow: hidden;
+    position: fixed;
+  }
+  .header-title{
+    font-size: 80px;
+  }
+  .header-text{
+    font-size: 20px;
+  }
+  .header-logo{
+    height: 100px;
+    width: 140px;
+    size: 200px;
+    margin-right: 40px;
+  }
+}
+
 
 .section{
   flex-flow: row wrap;
@@ -53,7 +84,9 @@
 
 .search-section > .small-div > .section-image{
   border-radius: 20px;
-  width: 600px;
+  width: 70%;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .small-div {
@@ -145,6 +178,8 @@
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 40px;
 }
 .about {
   background: var(--darkGrey);
@@ -152,19 +187,43 @@
   
 }
 .about-center {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
+  margin-left: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
   padding :50px;
   padding-top: 30px;
+  margin-right: 20px;
 }
 .about-main{
   padding: 50px;
 }
 
+@media screen and (min-width: 776px) {
+  .about-hauskey{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+  }
+  .about-center {
+    width: 100vw;
+    margin: 0 auto;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 50px;
+    padding :50px;
+    padding-top: 30px;
+    margin-right: 20px;
+  }
+}
 .faicon{
   font-size: 70px;
 }
@@ -177,11 +236,10 @@
   background: var(--darkGrey);
   text-align: center;
   width: 100px;
-  /* box-shadow: var(--darkShadow); */
-  /* background: rgba(0, 0, 0, 0.8); */
 }
 .about-main-featured{
   padding: 50px;
+  margin-left: 50px;
 }
 .about-featured{
   text-align: center;
@@ -190,7 +248,7 @@
   padding-bottom: 70px;
 }
 .featured-projects-center {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -199,9 +257,22 @@
 }
 @media screen and (min-width: 776px) {
   .featured-projects-center {
-    width: 90vw;
+    width: 93vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
+}
+.about-featured{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 550;
+  padding-bottom: 70px;
+  margin-right: 35px;
+}
+.featured-projects {
+  background: var(--darkGrey);
+  text-align: center;
+  width: 70px;
+  margin-left: 80px;
 }
 @media screen and (min-width: 992px) {
   .featured-projects-center {
@@ -209,18 +280,33 @@
     max-width: 1170px;
   }
 }
+.about-featured{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 70px;
+}
 
-@media only screen and (min-width:320px) and (max-width:725px){
+@media only screen and (min-width:320px) and (max-width:720px){
   .contact-form{
     display: flex;
     flex-direction: column;
     /*flex-flow: row wrap;*/
     width:80%;
+    margin-left: 40px;
+  }
+  .contact-container  {
+    flex-flow: column;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width:120%;
+    margin-left: 55px;
   }
 
   .section{
-    
-    width: 100%;
+  
+    width: 130%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,6 +319,12 @@
     text-align: center;
     margin-bottom: 4rem;
   }
+  .search-section > .small-div > .section-image{
+    border-radius: 20px;
+    width: 100%;
+    align-items: center;
+    margin-left: 5px;
+  }
   .section-title h4 {
     font-size: 700rem;
     letter-spacing: var(--mainSpacing);
@@ -240,9 +332,19 @@
     margin-bottom: 1rem;
   }
 
+  .big-div {
+    width: 50%;
+    padding: 20px;
+    padding-right: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    align-items: center;
+  }
 
   .small-div {
     width: 80%;
+    margin-left: 50px;
   }
 }
 

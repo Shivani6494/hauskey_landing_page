@@ -15,10 +15,6 @@ export default function ContactContainer() {
                         <i className="fas fa-mobile-alt"></i>
                        +1 888-600-4017
                     </span>
-                    {/* <span>
-                        <i className="far fa-envelope"></i>
-                        company.gmail.com
-                    </span> */}
                 </div>
                     
                 <div id='sect2'>
